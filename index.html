@@ -1,22 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xmodels</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset and typography */
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        #hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        section#about {
+            background: #f4f4f4;
+            padding: 2rem 1rem;
+            line-height: 1.8;
+        }
+
+        section#about h2, section#contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        section#about p {
+            margin-bottom: 1.5rem;
+        }
+
+        section#about p strong {
+            color: #333;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 1rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            section#about, section#contact {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="header-content">
-            <img src="logo.png" alt="Xmodels Logo" id="logo">
+            <img src="logo.png" alt="Xmodels Logo" id="logo" width="150">
             <nav>
                 <a href="#about">About Us</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
-    
+
     <main>
         <section id="hero">
             <img src="hero-banner.png" alt="Hero Banner">
@@ -24,18 +123,23 @@
 
         <section id="about">
             <h2>About Us</h2>
-            <p>Your about us content goes here...</p>
+            <p>Welcome to <strong>Xmodels AI</strong>, where cutting-edge artificial intelligence meets real-world solutions. Founded by a distinguished team of university professors, researchers, and seasoned AI experts from industry, Xmodels AI embodies a fusion of deep academic knowledge and practical, transformative expertise.</p>
+            <p>Our founders are pioneers in the realm of deep learning, specializing in advanced techniques such as transformers. We harness these powerful technologies to tackle complex scientific challenges in applied sciences, ranging from cloud ice water prediction and wildfire forecasting to solar activity analysis using satellite imagery.</p>
+            <p>In addition to our scientific endeavors, Xmodels AI excels in the development and application of large language models and generative AI. By leveraging natural language processing (NLP) techniques, we empower businesses to generate content seamlessly and extract valuable intelligence from historical data with unprecedented speed and accuracy.</p>
+            <p>At Xmodels AI, our team is composed of passionate, creative, and energetic individuals dedicated to maximizing the capabilities of AI and machine learning for our clients. Our collaborative approach ensures that we not only meet but exceed your expectations.</p>
+            <p>Partner with Xmodels AI and unlock the transformative potential of artificial intelligence to drive innovation and achieve your most ambitious goals.</p>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Your contact details or form goes here...</p>
+            <p>Contact us for more information at <a href="mailto:xmodel.info@gmail.com">xmodel.info@gmail.com</a></p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Xmodels. All rights reserved.</p>
     </footer>
-	
+    
 </body>
+
 </html>
